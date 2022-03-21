@@ -172,6 +172,10 @@ label {
     color: #5e5e5e;
 }
 
+.g-3 span {
+    color: red;
+}
+
 .btn-primary {
     background-color: #3fc35f;
     color: white;
