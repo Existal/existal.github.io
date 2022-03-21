@@ -225,47 +225,52 @@
             <a id="contact"></a>
 
             <div class="contact">
-                <h2>Contact</h2>
-                <p>All the information sent through this form will be processed in a secure environment and sent to my personal email.
-                I should get back to you within the week after submitting the form.</p>
 
-                <div class="container mt-5">
-                    <form class="row g-3" action="https://formsubmit.co/tylerjacobmueller08@gmail.com" method="POST">
-                        <!-- Honeypot -->
-                        <label>
-                            <input type="text" name="_honey" style="display: none;">
-                        </label>
+                <div class="contact-text">
+                    <h2>Contact</h2>
+                    <p>All the information sent through this form will be processed in a secure environment and sent to my personal email.
+                        I should get back to you within the week after submitting the form.</p>
+                </div>
 
-                        <!-- Disable Captcha -->
-                        <input type="hidden" name="_captcha" value="false">
+                <div class="contact-form">
+                    <div class="container">
+                        <form class="row g-3" action="https://formsubmit.co/tylerjacobmueller08@gmail.com" method="POST">
+                            <!-- Honeypot -->
+                            <label>
+                                <input type="text" name="_honey" style="display: none;">
+                            </label>
 
-                        <input type="hidden" name="_next" value="https://existal.github.io/success.html">
+                            <!-- Disable Captcha -->
+                            <input type="hidden" name="_captcha" value="false">
 
-                        <!-- Form -->
-                        <div class="col-md-6">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" name="name" id="firstName" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" name="last&nbsp;name" id="lastName" required>
-                        </div>
-                        <div class="col-md-7">
-                            <label for="emailInfo" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" name="email" id="emailInfo" required>
-                        </div>
-                        <div class="col-md-5">
-                            <label for="phoneNumber" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" name="phone&nbsp;number" id="phoneNumber" placeholder="+1 (123) 123-1234">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
+                            <input type="hidden" name="_next" value="https://existal.github.io/success.html">
+
+                            <!-- Form -->
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" name="name" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" name="last&nbsp;name" id="lastName" required>
+                            </div>
+                            <div class="col-md-7">
+                                <label for="emailInfo" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" name="email" id="emailInfo" required>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" name="phone&nbsp;number" id="phoneNumber" placeholder="+1 (123) 123-1234">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <br><br><br>

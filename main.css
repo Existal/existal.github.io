@@ -124,7 +124,7 @@ button a {
 
 /* Experience Section */
 .experience {
-    padding: 10px 15%;
+    padding: 10px 14%;
     background-color: #FFF;
 }
 
@@ -136,12 +136,23 @@ button a {
 
 /* Contact */
 .contact {
-    padding: 10px 15%;
     background-color: #FAFAFA;
+}
+
+.contact-text {
+    padding: 0 14%;
 }
 
 .contact p {
     margin-left: 25px;
+}
+
+.contact-form {
+    padding: 0 15%;
+}
+
+label {
+    color: #5e5e5e;
 }
 
 .btn-primary {
