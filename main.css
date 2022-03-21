@@ -4,25 +4,32 @@ body {
     font-family: Comic Sans MS, serif;
 }
 
-html {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-canvas {
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3FC35F;
     display: block;
-    vertical-align: bottom;
+    padding: 10px 25px;
+    margin-bottom: 5px;
 }
 
-#particles-js{
-    width: 100%;
-    height: 550px;
-    background-color: #212121;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+h3 {
+    font-size: 20px;
+    color: #3FC35F;
+    box-sizing: border-box;
+    display: block;
+    padding-top: 25px;
 }
 
-/* Navigation */
+p {
+    color: #727272;
+    font-size: 15px;
+    line-height: 190%;
+    text-align: justify;
+}
+
+
+/* Navigation Bar */
 .navbar-brand {
     margin-left: 10px;
 }
@@ -48,32 +55,17 @@ canvas {
     color: #3FC35F;
 }
 
-
-h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #3FC35F;
-    display: block;
-    padding: 10px 25px;
-    margin-bottom: 5px;
+#particles-js {
+    width: 100%;
+    height: 525px;
+    background-color: #212121;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
-h3 {
-    font-size: 20px;
-    color: #3FC35F;
-    box-sizing: border-box;
-    display: block;
-    padding-top: 25px;
-}
 
-p {
-    color: #727272;
-    font-size: 15px;
-    line-height: 190%;
-    text-align: justify;
-}
-
-/* About Me */
+/* About Me Section */
 .about {
     padding: 80px 15%;
     background-color: #FAFAFA;
@@ -125,7 +117,7 @@ p {
 }
 
 
-/* Experience */
+/* Experience Section */
 .experience {
     padding: 10px 15%;
     background-color: #FFF;
@@ -151,14 +143,11 @@ p {
     font-size: 15px;
 }
 
-.progress {
-    height: 30px;
-}
-
 .progress-bar {
     background: -webkit-linear-gradient(left, #125400 0%, #00c424 100%);
     border: 1px black solid;
 }
+
 
 /* Contact */
 .contact {
