@@ -128,26 +128,6 @@ p {
     text-indent: 50px;
 }
 
-.skills {
-    margin-left: 25px;
-}
-
-.labels {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.labels span {
-    color: #727272;
-    font-size: 15px;
-}
-
-.progress-bar {
-    background: -webkit-linear-gradient(left, #125400 0%, #00c424 100%);
-    border: 1px black solid;
-}
-
 
 /* Contact */
 .contact {
