@@ -56,6 +56,13 @@ p {
     margin-right: 10px;
 }
 
+.nav-item span {
+    color: #212529;;
+}
+
+.nav-item span:hover {
+    color: gray;
+}
 
 /* Banner */
 .banner h1 {
