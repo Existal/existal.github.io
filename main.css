@@ -4,6 +4,10 @@ body {
     font-family: Comic Sans MS, serif;
 }
 
+::selection {
+    color: #C6C6C6;
+}
+
 img {
     pointer-events: none
 }
