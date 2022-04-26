@@ -53,8 +53,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Profile</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalForm1">Sign In</a></li>
-                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalForm2">Log Out</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#signInForm">Sign In</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -66,106 +65,8 @@
         </nav>
 
         <!-- Login Modal -->
-        <div class="modal fade" id="modalForm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form>
-                            <div class="imgcontainer">
-                                <img src="Images/Profile%20Picture.jpg" alt="Avatar" class="avatar">
-                            </div>
+        <div class="modal fade" id="signInForm" tabindex="-1" aria-hidden="true">
 
-                            <div class="modal-header">
-                                <h5 class="modal-title">Welcome Back!</h5>
-                            </div>
-
-                            <div class="container">
-                                <label><b>Username</b></label><br>
-                                <label>
-                                    <input type="email" placeholder="Enter E-mail" name="email" required>
-                                </label><br><br>
-                                <label><b>Password</b></label><br>
-                                <label>
-                                    <input type="password" placeholder="Enter Password" name="psw" required>
-                                </label><br><br>
-
-                                <button type="submit">Log In</button><br><br>
-
-                                <p style="text-align: center;">Don't have an account? <a href="" data-bs-toggle="modal" data-bs-target="#modalForm3">Sign Up</a></p>
-                            </div>
-
-                            <div class="container" style="background-color:#f1f1f1">
-                                <button type="button" class="cancelbtn" data-bs-dismiss="modal">Cancel</button>
-                                <span class="psw"><a href="#">Forgot Password?</a></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Logout Modal -->
-        <div class="modal fade" id="modalForm2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Logout</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <br><br>
-                            <button type="submit" class="btn btn-warning float-end" data-bs-dismiss="modal" aria-label="Close">Logout</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sign Up Modal -->
-        <div class="modal fade" id="modalForm3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <form>
-                            <div class="imgcontainer">
-                                <img src="Images/Profile%20Picture.jpg" alt="Avatar" class="avatar">
-                            </div>
-
-                            <div class="modal-header">
-                                <h5 class="modal-title">Sign Up for Free</h5>
-                            </div>
-
-                            <div class="container">
-                                <label><b>First Name</b></label><br>
-                                <label>
-                                    <input type="text" placeholder="First Name" name="first" required>
-                                </label><br><br>
-                                <label><b>Last Name</b></label><br>
-                                <label>
-                                    <input type="text" placeholder="Last Name" name="last" required>
-                                </label><br><br>
-                                <label><b>Email Address</b></label><br>
-                                <label>
-                                    <input type="email" placeholder="Email Address" name="mail" required>
-                                </label><br><br>
-                                <label><b>Set Password</b></label><br>
-                                <label>
-                                    <input type="text" placeholder="Set Password" name="pwd" required>
-                                </label><br><br>
-
-                                <button type="submit">Sign Up</button><br><br>
-                            </div>
-
-                            <div class="container" style="background-color:#f1f1f1">
-                                <button type="button" class="cancelbtn" data-bs-dismiss="modal">Cancel</button>
-                                <span class="psw"><a href="#">Forgot Password?</a></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="banner">
@@ -184,7 +85,7 @@
                 <h1>About Me</h1>
                 <p>Hello! My name is Tyler Mueller, and I have an interest in programming. I enjoy programming with languages such as Python, C#, Javascript, HTML, and CSS. I know to create games, websites, and applications. My objective in life is to complete my initial education, receive my high school diploma, attend college at South Dakota School of Mines & Technology for a Computer Science degree, and obtain a career as a Software Developer. I approach life with deep thoughtfulness and imagination. The greatest pain I see in the world is people not reaching their full potential. I believe there is somebody out there who has the cure for cancer. I passionately believe in a quote from Horace Mann, a great educator, "Be ashamed to die until you have won some victory for humanity." There is a limited number of breaths that each of us is to take on this planet. Take every day and every moment and make something of it — make something positive. Why waste time?</p>
 
-                <button class="btn btn-primary">
+                <button class="resume-btn">
                     <a><i class="fa fa-download"></i> Resume</a>
                 </button>
 
@@ -244,19 +145,19 @@
                                 <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
                             </div>
                             <div class="col-md-7">
-                                <label for="emailInfo" class="form-label">E-mail <span>*</span></label>
+                                <label for="emailInfo" class="form-label">E-Mail <span>*</span></label>
                                 <input type="email" class="form-control" name="Email" id="emailInfo" required>
                             </div>
                             <div class="col-md-5">
                                 <label for="phoneNumber" class="form-label">Phone Number</label>
-                                <input type="text" class="form-control" name="Phone&nbsp;Number" id="phoneNumber" placeholder="+1 (123) 123-1234">
+                                <input type="text" class="form-control" name="Phone&nbsp;Number" id="phoneNumber" placeholder="+1 (123) 456-7890">
                             </div>
                             <div class="col-md-12">
                                 <label for="message" class="form-label">Message <span>*</span></label>
                                 <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="form-btn">Submit</button>
                             </div>
                         </form>
                     </div>
