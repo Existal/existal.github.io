@@ -13,17 +13,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Link Stylesheet -->
-        <link href="main.css" media="screen" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
 
         <title>Tyler Mueller's Website</title>
     </head>
 
     <body>
-        <a id="top"></a>
-
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#top">
+                <a class="navbar-brand" href="">
                     <img src="Images/Transparent%20Profile%20Picture.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar2">
@@ -32,16 +30,16 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar2">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#top">Home</a>
+                            <a class="nav-link active" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About Me</a>
+                            <a class="nav-link" href="">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#experience">Experience</a>
+                            <a class="nav-link" href="">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Profile</a>
@@ -52,7 +50,7 @@
                     </ul>
                 </div>
                 <div class="navbar-name">
-                    <a class="navbar-brand" href="#top">Tyler Mueller</a>
+                    <a class="navbar-brand" href="">Tyler Mueller</a>
                 </div>
             </div>
         </nav>
@@ -68,28 +66,27 @@
                             </div>
 
                             <div class="modal-header">
-                                <h5 class="modal-title">Welcome Back!</h5>
+                                <h4 class="modal-title">Welcome Back!</h4>
                             </div>
 
                             <div class="container login">
-                                <label><b>E-Mail</b></label><br>
-                                <label>
+                                <label> E-Mail <span>*</span><br>
                                     <input type="email" placeholder="Enter E-Mail" name="email" required>
                                 </label><br><br>
-                                <label><b>Password</b></label><br>
-                                <label>
+
+                                <label>Password <span>*</span><br>
                                     <input type="password" placeholder="Enter Password" name="psw" required>
                                 </label><br><br>
 
                                 <div class="submit">
-                                    <button type="submit">Log In</button><br><br>
+                                    <button type="submit" class="submitBtn">Log In</button><br><br>
                                 </div>
 
                                 <p style="text-align: center;">Don't have an account? <a href="" data-bs-toggle="modal" data-bs-target="#modalForm3">Sign Up</a></p>
                             </div>
 
-                            <div class="container" style="background-color:#f1f1f1">
-                                <button type="button" class="cancelbtn" data-bs-dismiss="modal">Cancel</button>
+                            <div class="container" style="background-color:#F1F1F1">
+                                <button type="button" class="cancelBtn" data-bs-dismiss="modal">Cancel</button>
                                 <span class="psw"><a href="#">Forgot Password?</a></span>
                             </div>
                         </form>
@@ -108,13 +105,12 @@
         </div>
 
         <div class="main">
-            <a id="about"></a>
             <div class="about">
                 <img src="Images/Profile Picture.jpg" alt="Profile Picture">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
                 <p>Hello! My name is Tyler Mueller, and I have an interest in programming. I enjoy programming with languages such as Python, C#, Javascript, HTML, and CSS. I know to create games, websites, and applications. My objective in life is to complete my initial education, receive my high school diploma, attend college at South Dakota School of Mines & Technology for a Computer Science degree, and obtain a career as a Software Developer. I approach life with deep thoughtfulness and imagination. The greatest pain I see in the world is people not reaching their full potential. I believe there is somebody out there who has the cure for cancer. I passionately believe in a quote from Horace Mann, a great educator, "Be ashamed to die until you have won some victory for humanity." There is a limited number of breaths that each of us is to take on this planet. Take every day and every moment and make something of it — make something positive. Why waste time?</p>
 
-                <button class="resume-btn">
+                <button class="button">
                     <a><i class="fa fa-download"></i> Resume</a>
                 </button>
 
@@ -122,13 +118,11 @@
                     <h3>Personal Information</h3>
                     <ul>
                         <li>Name: Tyler Mueller</li>
-                        <li>Age: <!--<script type="text/javascript">document.write(new Date(new Date()-new Date('2008-03-07')).getFullYear()-1970);</script> (March 7th, 2008) -->
-                        </li>
-                        <li>Email: <!--<a href="mailto:tylerjacobmueller08@gmail.com">TylerJacobMueller08@gmail.com</a>--></li>
+                        <li>Age: <script type="text/javascript">document.write(new Date(new Date()-new Date('2008-03-07')).getFullYear()-1970);</script> (March 7th, 2008)</li>
+                        <li>Email: <a href="mailto:tylerjacobmueller08@gmail.com">TylerJacobMueller08@gmail.com</a></li>
                         <li>Location: <a href="https://www.google.com/maps/place/South+Dakota/@44.1327277,-104.733318,6z/data=!3m1!4b1!4m5!3m4!1s0x877d432d85e938a5:0x7f0d6293186a4b7!8m2!3d43.9695148!4d-99.9018131">South Dakota, United States</a></li>
                     </ul>
                 </div>
-                <a id="experience"></a>
             </div>
 
             <div class="experience">
@@ -141,8 +135,6 @@
 
                 <br><br><br>
             </div>
-
-            <a id="contact"></a>
 
             <div class="contact">
                 <div class="contact-text">
@@ -161,7 +153,6 @@
 
                             <!-- Disable Captcha -->
                             <input type="hidden" name="_captcha" value="false">
-
                             <input type="hidden" name="_next" value="https://existal.github.io/success.html">
 
                             <!-- Form -->
@@ -186,7 +177,7 @@
                                 <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="form-btn">Submit</button>
+                                <button type="submit" class="button">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -198,8 +189,10 @@
 
         <footer>
 		    <span>
-				© <script type="text/javascript">document.write(new Date().getFullYear());</script> - Tyler Mueller
+				© Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> – Tyler J. Mueller
 			</span>
         </footer>
     </body>
 </html>
+
+<!-- © Copyright 2022 – Tyler J. Mueller -->

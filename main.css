@@ -1,49 +1,59 @@
 /* Body */
 body {
-    box-sizing: border-box;
     font-family: Comic Sans MS, serif;
 }
 
-::selection {
-    background-color: #D6D6CD;
-}
-
-img {
-    pointer-events: none
+h1, h2, h3 {
+    font-weight: bold;
+    color: #3FC35F;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #3FC35F;
-    display: block;
-    padding: 10px 25px;
-    margin-bottom: 5px;
+    font-size: 45px;
+    position: relative;
+    text-align: center;
+    top: 49%;
+    color: #EEE;
 }
 
 h2 {
     font-size: 30px;
-    font-weight: bold;
-    color: #3FC35F;
-    display: block;
-    padding: 30px 25px 15px;
     margin-bottom: 5px;
+    padding: 30px 25px 15px;
 }
 
 h3 {
     font-size: 20px;
-    color: #3FC35F;
-    box-sizing: border-box;
-    display: block;
-    padding-top: 25px;
-    padding-bottom: 5px;
+    font-weight: normal;
+    padding: 25px 0 5px;
+}
+
+h4 {
+    font-size: 30px;
+    position: relative;
+    left: 26%;
 }
 
 p {
-    color: #727272;
     font-size: 15px;
+    color: #727272;
     line-height: 190%;
     text-align: justify;
+}
+
+.button {
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 26px;
+    background-color: #3fc35f;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.button:hover {
+    background-color: #29a129;
+    transition: 0.5s;
 }
 
 
@@ -53,8 +63,7 @@ p {
 }
 
 .nav-item {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 15px;
 }
 
 .nav-item span {
@@ -65,17 +74,74 @@ p {
     color: gray;
 }
 
-/* Banner */
-.banner h1 {
-    color: #eee;
-    font-size: 45px;
+/* Login Modal */
+.imgcontainer {
     text-align: center;
-    font-family: Comic Sans MS, serif;
-    font-weight: bold;
-    position: relative;
-    top: 265px;
+    margin-top: 10px;
 }
 
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.login label {
+    font-weight: lighter;
+}
+
+.login label span {
+    color: red;
+}
+
+.login input[type=text], .login input[type=email], .login input[type=password] {
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit button {
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    margin: 8px 0;
+    padding: 14px 20px;
+    background-color: #4CAF50;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.submitBtn:hover {
+    background-color: #469e49;
+    transition: 0.5s;
+}
+
+.cancelBtn {
+    color: white;
+    width: 25%;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 18px;
+    background-color: #f44336;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.cancelBtn:hover {
+    background-color: #db3c30;
+    transition: 0.5s;
+}
+
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+
+/* Name Banner */
 .banner span {
     color: #3FC35F;
 }
@@ -92,40 +158,21 @@ p {
 
 /* About Me Section */
 .about {
-    padding: 80px 15%;
     background-color: #FAFAFA;
+    padding: 80px 15%;
+}
+
+.about h2 {
+    padding: 10px 25px;
 }
 
 .about img {
+    border: 5px solid white;
     max-height: 150px;
     max-width: 150px;
-    display: inline;
-    border: white solid 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     float: left;
-    margin-right: 35px;
-    margin-bottom: 25px;
-}
-
-.about button {
-    background-color: #3fc35f;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 12px 26px;
-    cursor: pointer;
-    font-size: 16px;
+    margin: 0 35px 25px 0;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.about button:hover {
-    background-color: #29a129;
-    transition: 0.5s;
-}
-
-.about button a {
-    text-decoration: none;
-    color: white;
 }
 
 .personal-information {
@@ -133,30 +180,30 @@ p {
 }
 
 .personal-information li {
-    list-style-type: none;
-    line-height: 1.5;
     font-size: 14px;
-    border-bottom: 1px solid #eeeeee;
     color: #727272;
+    max-width: 300px;
+    line-height: 1.5;
+    list-style-type: none;
     margin-bottom: 12px;
     padding-bottom: 12px;
-    max-width: 400px;
+    border-bottom: 1px solid #EEE;
 }
 
 
-/* Experience */
+/* Experience Section */
 .experience {
-    padding: 10px 14%;
     background-color: #FFF;
+    padding: 0 14%;
 }
 
 .experience p {
-    margin-left: 25px;
     text-indent: 50px;
+    margin-left: 25px;
 }
 
 
-/* Contact */
+/* Contact Section */
 .contact {
     background-color: #FAFAFA;
 }
@@ -169,115 +216,31 @@ p {
     margin-left: 25px;
 }
 
+/* Contact Form */
 .contact-form {
     padding: 0 15%;
 }
 
-.contact-form label {
+.form-label {
     color: #5e5e5e;
 }
 
-.g-3 span {
+.form-label span {
     color: red;
-}
-
-.form-btn {
-    background-color: #3fc35f;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 12px 26px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.form-btn:hover {
-    background-color: #29a129;
-    transition: 0.5s;
 }
 
 
 /* Footer */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #008A3C;
     color: #FDFDFD;
-    text-align: center;
     font-size: 16px;
     line-height: 1.75;
-}
-
-
-
-h5 {
-    position: relative;
-    left: 25%;
-    font-size: 30px;
-}
-/*set border to the form*/
-
-.login-form form {
-    border: 3px solid #f1f1f1;
-}
-/*assign full width inputs*/
-.login input[type=text],
-.login input[type=email],
-.login input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-/*set a style for the buttons*/
-
-.submit button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 2px;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-    border: none;
-    cursor: pointer;
-    color: white;
-    border-radius: 2px;
-}
-
-.imgcontainer {
     text-align: center;
-    margin: 24px 0 0 0;
+    background-color: #008A3C;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 10px;
-}
-
-.login label {
-    color: black;
-    font-family: Arial, serif;
-    font-weight: lighter;
-}
+/* © Copyright 2022 – Tyler J. Mueller */
