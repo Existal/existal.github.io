@@ -33,13 +33,13 @@
                             <a class="nav-link active" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">About Me</a>
+                            <a class="nav-link" href="#aboutSection">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Experience</a>
+                            <a class="nav-link" href="#experienceSection">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Contact</a>
+                            <a class="nav-link" href="#contactSection">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Profile</a>
@@ -65,22 +65,24 @@
                                 <img src="Images/Blank%20Profile%20Picture.png" alt="Avatar" class="avatar">
                             </div>
 
-                            <div class="modal-header">
-                                <h4 class="modal-title">Welcome Back!</h4>
-                            </div>
-
                             <div class="container login">
-                                <label> E-Mail <span>*</span><br>
+                                <label>E-Mail <span>*</span><br>
                                     <input type="email" placeholder="Enter E-Mail" name="email" required>
-                                </label><br><br>
+                                </label>
+                                <br>
 
                                 <label>Password <span>*</span><br>
                                     <input type="password" placeholder="Enter Password" name="psw" required>
-                                </label><br><br>
+                                </label>
+                                <br>
 
-                                <div class="submit">
-                                    <button type="submit" class="submitBtn">Log In</button><br><br>
-                                </div>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                                <br><br>
+
+                                <button type="submit" class="submitBtn">Log In</button>
+                                <br><br>
 
                                 <p style="text-align: center;">Don't have an account? <a href="" data-bs-toggle="modal" data-bs-target="#modalForm3">Sign Up</a></p>
                             </div>
@@ -95,17 +97,17 @@
             </div>
         </div>
 
-        <div class="banner">
+        <section class="banner">
             <div id="particles-js">
                 <h1>Hello! I am <span>Tyler Mueller</span></h1>
             </div>
 
             <script src="particles.js"></script>
             <script src="js/app.js"></script>
-        </div>
+        </section>
 
         <div class="main">
-            <div class="about">
+            <section class="about" id="aboutSection">
                 <img src="Images/Profile Picture.jpg" alt="Profile Picture">
                 <h2>About Me</h2>
                 <p>Hello! My name is Tyler Mueller, and I have an interest in programming. I enjoy programming with languages such as Python, C#, Javascript, HTML, and CSS. I know to create games, websites, and applications. My objective in life is to complete my initial education, receive my high school diploma, attend college at South Dakota School of Mines & Technology for a Computer Science degree, and obtain a career as a Software Developer. I approach life with deep thoughtfulness and imagination. The greatest pain I see in the world is people not reaching their full potential. I believe there is somebody out there who has the cure for cancer. I passionately believe in a quote from Horace Mann, a great educator, "Be ashamed to die until you have won some victory for humanity." There is a limited number of breaths that each of us is to take on this planet. Take every day and every moment and make something of it — make something positive. Why waste time?</p>
@@ -123,9 +125,9 @@
                         <li>Location: <a href="https://www.google.com/maps/place/South+Dakota/@44.1327277,-104.733318,6z/data=!3m1!4b1!4m5!3m4!1s0x877d432d85e938a5:0x7f0d6293186a4b7!8m2!3d43.9695148!4d-99.9018131">South Dakota, United States</a></li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
-            <div class="experience">
+            <section class="experience" id="experienceSection">
                 <h2>Experience</h2>
                 <p>Since I was younger, I've always been intrigued by the science behind computers. My first experience with programming was using the MadCommands plugin for PocketMine (Minecraft Bedrock Edition) servers that enables you to override existing commands or define your own using a simple BASIC-like programming language. I bought my first computer in 2018, and I began developing my own Minecraft plugins with the PocketMine-MP (PMMP) API using the PHP programming language. In the summer of 2019, I interned at a local computer repair store, and I learned about customer service and repairing computers. They believed that helping people find the help and information when and where you need it will make a brighter world. Recently, I have been expanding my knowledge of web development and game development.</p>
                 <br>
@@ -134,9 +136,9 @@
                 <p>Either better or worse, the majority of our lives will be spent at work. Don't spend that time unhappy. It's essential to wake up happy and elevated instead of dreading the new week. There's no shortage of people who dread getting up in the morning, complain non-stop about their jobs, and people who have no energy at the end of the day who can't figure out where it all went wrong. I realized that it's essential to find enjoyment in your career because you will be working for forty to fifty years of your life. I constantly try to set myself apart from the crowd and propel myself to the top. I learned that if I plan to make it big someday, I cannot afford to do anything less than my absolute best.</p>
 
                 <br><br><br>
-            </div>
+            </section>
 
-            <div class="contact">
+            <section class="contact" id="contactSection">
                 <div class="contact-text">
                     <h2>Contact</h2>
                     <p>All the information sent through this form will be processed in a secure environment and sent to my personal email.
@@ -184,7 +186,7 @@
                 </div>
 
                 <br><br><br>
-            </div>
+            </section>
         </div>
 
         <footer>
