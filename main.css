@@ -74,11 +74,15 @@ p {
     color: #3FC35F;
 }
 
+.testidk {
+    
+}
+
 #particles-js {
-    width: 100%;
+    position: relative;
     height: 540px;
+    z-index: 1000;
     background-color: #212121;
-    margin-bottom: 510x;
 }
 
 
