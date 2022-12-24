@@ -4,6 +4,11 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
 h1, h2, h3 {
     font-weight: bold;
     color: #3FC35F;
@@ -109,9 +114,6 @@ footer {
     left: 0;
 }
 
-/* © Copyright 2022 – Tyler J. Mueller */
-
-
 .custom-shape-divider-bottom-1671650261 svg {
     display: block;
     width: calc(100% + 1px);
@@ -145,3 +147,4 @@ footer {
 .custom-shape-divider-bottom-1671672105 .shape-fill {
     fill: #f8f9fa;
 }
+/* © Copyright 2022 – Tyler J. Mueller */
