@@ -1,0 +1,113 @@
+:root {  
+    --green: rgb(63, 195, 95);
+    --blue: rgb(0, 166, 255);
+  }
+  
+  @keyframes float {
+    from, to {
+      transform: translateY(-0%);
+    }
+    
+    50% {    
+      transform: translateY(-3%);
+    }
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 1000% center;
+    }
+    
+    to {
+      background-position: 0% center;
+    }
+  }
+
+  .word {
+    transition: opacity 250ms ease;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .fancy span {
+    display: inline-block;
+  }
+  
+  .fancy > .outer {
+    transition: transform 350ms ease;
+  }
+  
+  .fancy:hover > .outer {
+    transition-duration: 800ms;
+  }
+  
+  .fancy:hover > .outer > .inner {
+    animation: float 5s ease infinite;
+  }
+  
+  .fancy:hover > .outer > .inner > .letter {
+    background: linear-gradient(
+      to right,
+      var(--green),
+      var(--blue),
+      var(--green)
+    );
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background-pan 100s linear infinite;
+  }
+  
+  .fancy:hover > .outer:nth-child(1) {
+    transform: translate(20%, 20%) rotate(8deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(2) {
+    transform: translate(60%, 10%) rotate(4deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(3) {
+    transform: translate(135%, 10%) rotate(-6deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(4) {
+    transform: translate(80%, 8%) rotate(-8deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(5) {
+    transform: translate(125%, 5%) rotate(5deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(6) {
+    transform: translate(100%, 20%) rotate(-3deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(7) {
+    transform: translate(100%, 10%) rotate(-5deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(8) {
+    transform: translate(200%, 0%) rotate(10deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(9) {
+    transform: translate(200%, 0%) rotate(8deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(10) {
+    transform: translate(425%, 15%) rotate(-6deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(11) {
+    transform: translate(450%, 0%) rotate(-3deg);
+  }
+  
+  .fancy:hover > .outer:nth-child(12) {
+    transform: translate(225%, -10%) rotate(-10deg);
+  }
+
+  .fancy:hover > .outer:nth-child(13) {
+    transform: translate(290%, 0%) rotate(-6deg);
+  }
